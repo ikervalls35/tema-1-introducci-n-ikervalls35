@@ -7,16 +7,18 @@ public class Statistics {
         numeros.add("30");
         numeros.add("20");
 
-        long cuantos = numeros.stream()
-                .mapToInt(s -> Integer.valueOf(s))
+        long cuantos = contarMultiplosDeTres(numeros);
+        double media = calcularMedia(numeros);
+        System.out.println("Hay " + cuantos + " números múltiplos de 3 y la media es " + media);
+    }public static long contarMultiplosDeTres(List<String> numeros) {
+        return numeros.stream()
+                .mapToInt(Integer::parseInt)
                 .filter(number -> number % 3 == 0)
                 .count();
-
-        double media = numeros.stream()
-                .mapToInt(s -> Integer.valueOf(s))
+    }public static double calcularMedia(List<String> numeros) {
+        return numeros.stream()
+                .mapToInt(Integer::parseInt)
                 .average()
                 .getAsDouble();
-
-        System.out.printf("Hay %d números múltiplos de 3 y la media es %f%n", cuantos, media );
     }
 }
