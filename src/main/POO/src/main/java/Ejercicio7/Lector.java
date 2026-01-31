@@ -4,7 +4,7 @@ import java.util.List;
 class Lector {
     private String DNI;
     private String nombre;
-    private List<Prestamo> prestamoList = new ArrayList<>();
+    private List<Ejemplar> ejemplarList = new ArrayList<>();
     private List<Historico> historicoList = new ArrayList<>();
 
     public Lector(String DNI, String nombre) {
@@ -14,8 +14,8 @@ class Lector {
         return DNI;
     }public String getNombre() {
         return nombre;
-    }public List<Prestamo> getPrestamoList() {
-        return prestamoList;
+    }public List<Ejemplar> getEjemplarList() {
+        return ejemplarList;
     }public List<Historico> getHistoricoList() {
         return historicoList;
     }@Override

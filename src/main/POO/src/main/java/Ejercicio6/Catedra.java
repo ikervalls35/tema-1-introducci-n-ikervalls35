@@ -15,25 +15,15 @@ class Catedra {
         this.facultad.getCatedras().add(this);
         this.departamento = departamento;
         this.departamento.getCatedraList().add(this);
-    }
-
-    public String getId_catedra() {
+    }public String getId_catedra() {
         return id_catedra;
-    }
-
-    public String getNombre_catedra() {
+    }public String getNombre_catedra() {
         return nombre_catedra;
-    }
-
-    public Facultad getFacultad() {
+    }public Facultad getFacultad() {
         return facultad;
-    }
-
-    public List<Adscrito> getAdscritoList() {
+    }public List<Adscrito> getAdscritoList() {
         return adscritoList;
-    }
-
-    public Departamento getDepartamento() {
+    }public Departamento getDepartamento() {
         return departamento;
     }
     @Override

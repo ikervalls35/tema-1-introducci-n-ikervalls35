@@ -20,6 +20,6 @@ class Autor {
         libro.getAutorList().add(this);
     }@Override
     public String toString() {
-        return "Autor{" + "codAutor='" + codAutor + '\'' + ", nomAutor='" + nomAutor + '\'' + ", libroList=" + libroList + '}';
+        return "Autor{" + "codAutor='" + codAutor + '\'' + ", nomAutor='" + nomAutor + '\'' + '}';
     }
 }
