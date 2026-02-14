@@ -8,5 +8,8 @@ public abstract class Pez extends Animal {
     }@Override
     public void moverse() {
         System.out.println("Me muevo nadando");
+    }@Override
+    public String toString() {
+        return "Pez: " + getNombre();
     }
 }

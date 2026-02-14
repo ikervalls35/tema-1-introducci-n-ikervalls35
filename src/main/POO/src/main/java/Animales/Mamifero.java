@@ -13,5 +13,8 @@ public abstract class Mamifero extends Animal {
     }@Override
     public void comunicarse(){
         System.out.println("Soy un mamifero");
+    }@Override
+    public String toString() {
+        return "Mamifero: " + getNombre();
     }
 }
